@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "var(--color-primary)",
+          dark: "var(--color-primary-dark)",
+          light: "var(--color-primary-light)",
+          muted: "var(--color-primary-muted)",
+          subtle: "var(--color-primary-subtle)",
+        },
       },
     },
   },

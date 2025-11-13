@@ -66,7 +66,7 @@ export default function Services() {
     <section
       id="Services"
       ref={sectionRef}
-      className="py-32 bg-white"
+      className="py-32 bg-background-pure"
     >
       <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
         <div
@@ -74,17 +74,17 @@ export default function Services() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-5xl md:text-6xl font-light mb-4 text-slate-900 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-light mb-4 text-primary tracking-tight">
             Our Services
           </h2>
-          <div className="w-24 h-px bg-slate-300 mx-auto mt-8"></div>
+          <div className="w-24 h-px bg-primary-muted mx-auto mt-8"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group relative bg-white border border-slate-200 p-10 hover:border-slate-300 transition-all duration-700 ${
+              className={`group relative bg-background border border-border-color p-10 hover:border-primary-muted transition-all duration-700 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
@@ -97,21 +97,21 @@ export default function Services() {
                 {service.icon}
               </div>
               
-              <h3 className="text-2xl font-light mb-4 text-slate-900 tracking-tight">
+              <h3 className="text-2xl font-light mb-4 text-primary tracking-tight">
                 {service.title}
               </h3>
               
-              <p className="text-slate-600 mb-6 leading-relaxed text-sm font-light">
+              <p className="text-primary-muted mb-6 leading-relaxed text-sm font-light">
                 {service.description}
               </p>
               
-              <div className="pt-6 border-t border-slate-100">
-                <p className="text-xs text-slate-500 uppercase tracking-wider font-medium">
+              <div className="pt-6 border-t border-border-color-light">
+                <p className="text-xs text-primary-subtle uppercase tracking-wider font-medium">
                   {service.niche}
                 </p>
               </div>
               
-              <div className="absolute bottom-0 left-0 w-0 h-px bg-slate-900 group-hover:w-full transition-all duration-700"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-700"></div>
             </div>
           ))}
         </div>

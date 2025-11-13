@@ -3,19 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --text-color-dark: #0f172a;
-  --text-color-light: #64748b;
-  --color-primary: #3b82f6;
-  --color-primary-dark: #2563eb;
-  --color-primary-light: #60a5fa;
-  --border-color: #e2e8f0;
-  --gray-light: #f8fafc;
-  --gray-medium: #64748b;
-  --gray-dark: #1e293b;
-  --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --premium-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* Primary color from logo - dark charcoal/black */
+  --color-primary: #1a1a1a;
+  --color-primary-dark: #0a0a0a;
+  --color-primary-light: #2c2c2c;
+  --color-primary-muted: #4a4a4a;
+  --color-primary-subtle: #6a6a6a;
+  
+  /* Background colors matching logo - warm off-white/cream from logo.png */
+  --background: #f7f6f2;
+  --background-pure: #f7f6f2;
+  --background-subtle: #f5f4f0;
+  
+  /* Text colors */
+  --foreground: #1a1a1a;
+  --text-color-dark: #1a1a1a;
+  --text-color-light: #4a4a4a;
+  --text-color-muted: #6a6a6a;
+  
+  /* Border colors */
+  --border-color: #e0dfdc;
+  --border-color-light: #f0efec;
+  
+  /* Legacy support */
+  --gray-light: #faf9f6;
+  --gray-medium: #4a4a4a;
+  --gray-dark: #1a1a1a;
+  --accent-gradient: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  --premium-shadow: 0 20px 25px -5px rgba(26, 26, 26, 0.1), 0 10px 10px -5px rgba(26, 26, 26, 0.04);
 }
 
 * {

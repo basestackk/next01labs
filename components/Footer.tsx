@@ -1,14 +1,18 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-slate-900 border-t border-slate-200">
+    <footer className="bg-background-pure text-primary border-t border-border-color">
       <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="py-20 flex flex-col items-center justify-center gap-8 text-center">
           <div>
-            <div className="text-2xl font-light mb-3 text-slate-900 font-mono">Next<span className="font-mono">0</span>1 Labs</div>
-            <p className="text-slate-600 text-sm leading-relaxed font-light">
-              Your end-to-end technology partner for founders and enterprises.
+            <div className="flex items-center justify-center gap-3 text-2xl font-light mb-3 text-primary font-mono">
+              <Logo className="w-8 h-8 text-primary" />
+              <span>Next<span className="font-mono">0</span>1 Labs</span>
+            </div>
+            <p className="text-primary-muted text-sm leading-relaxed font-light">
+              Every stage Technology partner to founders & enterprises.
             </p>
           </div>
           <div>
@@ -16,7 +20,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/109727970/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-slate-900 hover:border-slate-300 transition-colors"
+              className="w-12 h-12 rounded-full bg-background-subtle border border-border-color flex items-center justify-center text-primary-muted hover:text-primary hover:border-primary-muted transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -25,7 +29,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="py-8 border-t border-slate-200 text-center text-sm text-slate-500 font-light">
+        <div className="py-8 border-t border-border-color text-center text-sm text-primary-subtle font-light">
           <p>&copy; {new Date().getFullYear()} Next<span className="font-mono">0</span>1 Labs. All rights reserved.</p>
         </div>
       </div>

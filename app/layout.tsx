@@ -18,10 +18,10 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Next01 Labs - Your end-to-end technology partner for founders and enterprises",
+    default: "Next01 Labs - Every stage Technology partner to founders & enterprises",
     template: "%s | Next01 Labs",
   },
-  description: "Next01 Labs provides end-to-end technology solutions for founders and enterprises. Expert services in AI/ML, web development, mobile apps, cloud infrastructure, and more.",
+  description: "Next01 Labs - Every stage Technology partner to founders & enterprises. Expert services in AI/ML, web development, mobile apps, cloud infrastructure, and more.",
   keywords: ["technology partner", "software development", "AI/ML", "cloud computing", "web development", "mobile apps", "enterprise solutions"],
   authors: [{ name: "Next01 Labs" }],
   creator: "Next01 Labs",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://next01labs.com",
     siteName: "Next01 Labs",
-    title: "Next01 Labs - Your end-to-end technology partner",
-    description: "Expert technology solutions for founders and enterprises",
+    title: "Next01 Labs - Every stage Technology partner to founders & enterprises",
+    description: "Every stage Technology partner to founders & enterprises",
     images: [
       {
         url: "/og-image.png",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next01 Labs - Your end-to-end technology partner",
-    description: "Expert technology solutions for founders and enterprises",
+    title: "Next01 Labs - Every stage Technology partner to founders & enterprises",
+    description: "Every stage Technology partner to founders & enterprises",
     images: ["/og-image.png"],
   },
   robots: {
@@ -81,8 +81,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="/logo.png" />
+        <link rel="shortcut icon" type="image/png" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="font-sans antialiased">{children}</body>

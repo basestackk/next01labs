@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="32" fill="#ffffff"/>
+  <text
+    x="24"
+    y="22"
+    fontSize="18"
+    fontWeight="700"
+    fill="#0f172a"
+    textAnchor="middle"
+    fontFamily="Georgia, 'Times New Roman', serif"
+    letterSpacing="0.02em"
+  >
+    0 &gt; 1
+  </text>
+</svg>
+
