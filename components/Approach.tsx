@@ -5,23 +5,19 @@ import { useEffect, useRef, useState } from "react";
 const approaches = [
   {
     number: "01",
-    title: "Discovery",
-    description: "We begin by understanding your vision, challenges, and objectives through deep collaboration and strategic analysis.",
+    title: "Strategy",
   },
   {
     number: "02",
-    title: "Architecture",
-    description: "Designing scalable, future-proof solutions that align with your business goals and technical requirements.",
+    title: "Design",
   },
   {
     number: "03",
     title: "Development",
-    description: "Building with precision, using modern methodologies and best practices to deliver exceptional quality.",
   },
   {
     number: "04",
-    title: "Evolution",
-    description: "Continuous improvement and optimization to ensure your solutions remain cutting-edge and performant.",
+    title: "Support",
   },
 ];
 
@@ -79,13 +75,9 @@ export default function Approach() {
                 </span>
               </div>
 
-              <h3 className="text-xl font-light mb-4 text-primary tracking-tight">
+              <h3 className="text-xl font-light text-primary tracking-tight">
                 {approach.title}
               </h3>
-
-              <p className="text-primary-muted leading-relaxed text-sm font-light">
-                {approach.description}
-              </p>
 
               <div className="absolute bottom-0 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-700"></div>
             </div>

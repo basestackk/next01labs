@@ -4,37 +4,37 @@ import { useEffect, useRef, useState } from "react";
 
 const services = [
   {
-    title: "Technology Consulting",
+    title: "Consulting",
     description: "Strategic technology guidance to align your business objectives with cutting-edge solutions. We analyze your current infrastructure, identify optimization opportunities, and design scalable architectures that drive innovation and competitive advantage.",
     niche: "Enterprise transformation through data-driven technology roadmaps",
     icon: "📊",
   },
   {
-    title: "Software Architecture",
+    title: "Architecture",
     description: "Designing robust, scalable, and maintainable software systems that stand the test of time. Our architectural approach emphasizes microservices, cloud-native patterns, and domain-driven design to ensure your applications evolve seamlessly with your business needs.",
     niche: "Microservices orchestration and event-driven architecture patterns",
     icon: "🏗️",
   },
   {
-    title: "AI Product Development",
+    title: "Automation",
     description: "Transforming artificial intelligence concepts into production-ready products. From machine learning model development to MLOps pipelines, we build intelligent systems that learn, adapt, and deliver measurable business value through advanced AI capabilities.",
     niche: "Custom LLM integration and generative AI product development",
     icon: "🤖",
   },
   {
-    title: "Hardware / IoT",
+    title: "Hardware",
     description: "Bridging the physical and digital worlds through embedded systems and IoT solutions. We develop connected devices, sensor networks, and edge computing systems that enable real-time data collection, processing, and intelligent automation across industries.",
     niche: "Edge AI deployment and industrial IoT system integration",
     icon: "🔌",
   },
   {
-    title: "Web Applications",
+    title: "Web",
     description: "Crafting elegant, performant web experiences that engage users and drive conversions. Our full-stack expertise spans modern frameworks, serverless architectures, and progressive web applications that deliver exceptional user experiences across all devices.",
     niche: "Serverless-first architecture and real-time collaborative platforms",
     icon: "🌐",
   },
   {
-    title: "Mobile Applications",
+    title: "Mobile",
     description: "Native and cross-platform mobile solutions that leverage platform-specific capabilities while maintaining code efficiency. We build intuitive, high-performance mobile applications with offline-first architectures and seamless cloud synchronization.",
     niche: "Cross-platform frameworks with native performance optimization",
     icon: "📱",
@@ -97,19 +97,9 @@ export default function Services() {
                 {service.icon}
               </div>
               
-              <h3 className="text-2xl font-light mb-4 text-primary tracking-tight">
+              <h3 className="text-2xl font-light text-primary tracking-tight">
                 {service.title}
               </h3>
-              
-              <p className="text-primary-muted mb-6 leading-relaxed text-sm font-light">
-                {service.description}
-              </p>
-              
-              <div className="pt-6 border-t border-border-color-light">
-                <p className="text-xs text-primary-subtle uppercase tracking-wider font-medium">
-                  {service.niche}
-                </p>
-              </div>
               
               <div className="absolute bottom-0 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-700"></div>
             </div>
