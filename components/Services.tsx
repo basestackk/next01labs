@@ -22,12 +22,6 @@ const services = [
     icon: "🤖",
   },
   {
-    title: "Hardware",
-    description: "Bridging the physical and digital worlds through embedded systems and IoT solutions. We develop connected devices, sensor networks, and edge computing systems that enable real-time data collection, processing, and intelligent automation across industries.",
-    niche: "Edge AI deployment and industrial IoT system integration",
-    icon: "🔌",
-  },
-  {
     title: "Web",
     description: "Crafting elegant, performant web experiences that engage users and drive conversions. Our full-stack expertise spans modern frameworks, serverless architectures, and progressive web applications that deliver exceptional user experiences across all devices.",
     niche: "Serverless-first architecture and real-time collaborative platforms",
@@ -38,6 +32,12 @@ const services = [
     description: "Native and cross-platform mobile solutions that leverage platform-specific capabilities while maintaining code efficiency. We build intuitive, high-performance mobile applications with offline-first architectures and seamless cloud synchronization.",
     niche: "Cross-platform frameworks with native performance optimization",
     icon: "📱",
+  },
+  {
+    title: "Hardware",
+    description: "Bridging the physical and digital worlds through embedded systems and IoT solutions. We develop connected devices, sensor networks, and edge computing systems that enable real-time data collection, processing, and intelligent automation across industries.",
+    niche: "Edge AI deployment and industrial IoT system integration",
+    icon: "🔌",
   },
 ];
 
