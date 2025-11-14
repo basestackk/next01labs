@@ -187,3 +187,15 @@ html {
   animation: fadeInUp 0.8s ease-out;
 }
 
+/* Pulse animation for global section */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
