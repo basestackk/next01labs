@@ -23,9 +23,6 @@ export default function Global() {
     return () => observer.disconnect();
   }, []);
 
-  // Animated dots representing global presence
-  const dots = Array.from({ length: 12 }, (_, i) => i);
-
   return (
     <section
       ref={sectionRef}
@@ -42,31 +39,27 @@ export default function Global() {
           </h2>
           <div className="w-24 h-px bg-primary-muted mx-auto mt-8 mb-16"></div>
           
-          {/* Animated dots representing global reach */}
+          {/* Radar rings representing global reach */}
           <div className="relative w-full h-64 md:h-80 flex items-center justify-center">
-            {dots.map((dot, index) => {
-              const angle = (index * 360) / dots.length;
-              const radius = 120;
-              const x = Math.cos((angle * Math.PI) / 180) * radius;
-              const y = Math.sin((angle * Math.PI) / 180) * radius;
-              
-              return (
-                <div
-                  key={index}
-                  className={`absolute w-2 h-2 rounded-full bg-primary-muted transition-all duration-1000 ${
-                    isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
-                  }`}
-                  style={{
-                    left: `calc(50% + ${x}px)`,
-                    top: `calc(50% + ${y}px)`,
-                    transform: 'translate(-50%, -50%)',
-                    transitionDelay: `${index * 100}ms`,
-                    animation: isVisible ? `pulse 2s ease-in-out infinite` : 'none',
-                    animationDelay: `${index * 0.2}s`,
-                  }}
-                />
-              );
-            })}
+            {/* Radar-style ripple rings */}
+            {[0, 1, 2].map((ring) => (
+              <div
+                key={ring}
+                className="absolute rounded-full border border-primary-muted"
+                style={{
+                  width: "180px",
+                  height: "180px",
+                  left: "50%",
+                  top: "50%",
+                  transform: "translate(-50%, -50%)",
+                  opacity: 0,
+                  animation: isVisible
+                    ? "globalRipple 3s ease-out infinite"
+                    : "none",
+                  animationDelay: `${ring * 0.9}s`,
+                }}
+              />
+            ))}
             
             {/* Center network icon */}
             <div

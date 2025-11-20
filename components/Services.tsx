@@ -13,7 +13,7 @@ const services = [
     title: "Architecture",
     description: "Designing robust, scalable, and maintainable software systems that stand the test of time. Our architectural approach emphasizes microservices, cloud-native patterns, and domain-driven design to ensure your applications evolve seamlessly with your business needs.",
     niche: "Microservices orchestration and event-driven architecture patterns",
-    icon: "🏗️",
+    icon: "🌩️",
   },
   {
     title: "Automation",

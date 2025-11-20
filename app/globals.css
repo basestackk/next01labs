@@ -199,3 +199,38 @@ html {
   }
 }
 
+/* Orbit animation for global dots container */
+@keyframes orbitRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Soft glow animation for individual global dots */
+@keyframes globalDotGlow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* Radar-style ripple animation for global section */
+@keyframes globalRipple {
+  0% {
+    opacity: 0.25;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+}
+
