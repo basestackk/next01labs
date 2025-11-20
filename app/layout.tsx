@@ -19,10 +19,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Next01 Labs - Every stage Technology partner to enterprise teams",
+    default: "End-to-End Technology Partner to enterprise teams",
     template: "%s | Next01 Labs",
   },
-  description: "Next01 Labs - Every stage Technology partner to enterprise teams. Expert services in AI/ML, web development, mobile apps, cloud infrastructure, and more.",
   keywords: ["technology partner", "software development", "AI/ML", "cloud computing", "web development", "mobile apps", "enterprise solutions"],
   authors: [{ name: "Next01 Labs" }],
   creator: "Next01 Labs",
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://next01labs.com",
     siteName: "Next01 Labs",
-    title: "Next01 Labs - Every stage Technology partner to enterprise teams",
+    title: "End-to-End Technology Partner to enterprise teams",
     description: "Every stage Technology partner to enterprise teams",
     images: [
       {
@@ -54,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next01 Labs - Every stage Technology partner to enterprise teams",
+    title: "End-to-End Technology Partner to enterprise teams",
     description: "Every stage Technology partner to enterprise teams",
     images: ["/og-image.png"],
   },

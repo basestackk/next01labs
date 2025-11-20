@@ -12,7 +12,7 @@ export default function Footer() {
               <span>Next<span className="font-mono">0</span>1 Labs</span>
             </div>
             <p className="text-primary-muted text-sm leading-relaxed font-light">
-              Every stage Technology partner to founders & enterprises.
+              Technology. Scale. Impact.
             </p>
           </div>
           <div>
