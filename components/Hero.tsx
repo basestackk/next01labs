@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 
@@ -13,19 +13,13 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-background-pure pt-40 pb-32 px-6">
       <div className="container mx-auto max-w-6xl">
         <div
-          className={`text-center max-w-4xl mx-auto transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={	ext-center maxæž-4xl mx-auto transition-all duration-1000 }
         >
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-light leading-[1.05] tracking-tight text-primary">
-            Every stage Technology partner to{" "}
-            <span className="font-normal italic text-primary-muted">
-              founders & enterprises
-            </span>
+            A technology partner across every stage of your enterprise journey
           </h1>
         </div>
       </div>
     </section>
   );
 }
-
